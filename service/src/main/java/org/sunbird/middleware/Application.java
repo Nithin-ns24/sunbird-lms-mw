@@ -19,7 +19,7 @@ public class Application {
     SchedulerManager.schedule();
     new Thread(
             new Runnable() {
-              @Override
+          
               public void run() {
                 org.sunbird.common.quartz.scheduler.SchedulerManager.getInstance();
               }
