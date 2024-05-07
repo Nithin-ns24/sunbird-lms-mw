@@ -15,6 +15,9 @@ import java.util.*;
 
 public class MigrationUtils {
 
+private MigrationUtils() {
+}
+
     private static CassandraOperation cassandraOperation = ServiceFactory.getInstance();
     private static ObjectMapper mapper = new ObjectMapper();
 

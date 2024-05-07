@@ -15,6 +15,9 @@ import org.sunbird.models.user.FeedStatus;
 
 /** this class will be used as a Util for inserting Feed in table */
 public class FeedUtil {
+  private FeedUtil() {
+  }
+  
   private static IFeedService feedService = FeedFactory.getInstance();
 
   public static Response saveFeed(ShadowUser shadowUser, List<String> userIds) {

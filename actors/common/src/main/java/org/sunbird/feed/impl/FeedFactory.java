@@ -4,6 +4,9 @@ import org.sunbird.feed.IFeedService;
 
 /** This class will create instance of FeedService */
 public class FeedFactory {
+  private FeedFactory() {
+  }
+  
   private static IFeedService instance;
 
   public static IFeedService getInstance() {

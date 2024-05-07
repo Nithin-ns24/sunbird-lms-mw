@@ -18,6 +18,9 @@ import org.sunbird.common.models.util.JsonKey;
 
 public class TextBookTocFileConfig {
 
+private TextBookTocFileConfig() {
+}
+
   private static Map<String, Object> outputMapping =
       getObjectFrom(getConfigValue(JsonKey.TEXTBOOK_TOC_OUTPUT_MAPPING), Map.class);
 

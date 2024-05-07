@@ -16,6 +16,9 @@ import org.sunbird.error.ListErrorDispatcher;
  */
 public class ErrorDispatcherFactory {
 
+private ErrorDispatcherFactory() {
+}
+
     /**
      * this ERROR_VISUALIZATION_THRESHOLD will decide in which need to show errors
      */

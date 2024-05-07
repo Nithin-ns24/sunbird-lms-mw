@@ -7,6 +7,9 @@ import java.util.Map;
 
 public class UserFlagUtil {
 
+private UserFlagUtil() {
+}
+
   /**
    * This method return int value of the boolean flag
    * @param userFlagType
