@@ -73,7 +73,7 @@ public class MigrationUser implements Serializable {
         return inputStatus;
     }
 
-    @Override
+    
     public String toString() {
         return "MigrationUser{" +
                 "email='" + email + '\'' +
