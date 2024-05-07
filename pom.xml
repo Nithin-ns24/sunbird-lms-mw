@@ -12,4 +12,8 @@
 		<module>actors</module>
 		<module>service</module>
 	</modules>
+	<properties>
+  	    <sonar.organization>nithin-ns24-1</sonar.organization>
+  	    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
 </project>
