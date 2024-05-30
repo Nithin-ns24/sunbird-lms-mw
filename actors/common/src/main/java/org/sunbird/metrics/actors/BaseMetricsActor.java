@@ -1,5 +1,6 @@
 package org.sunbird.metrics.actors;
 
+import io.github.pixee.security.BoundedLineReader;
 import static org.sunbird.common.models.util.ProjectUtil.isNotNull;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -387,7 +388,7 @@ public abstract class BaseMetricsActor extends BaseActor {
 
     StringBuilder result = new StringBuilder();
     String line = "";
-    while ((line = rd.readLine()) != null) {
+    while ((line = BoundedLineReader.readLine(rd, 5_000_000)) != null) {
       result.append(line);
     }
     ProjectLogger.log(
