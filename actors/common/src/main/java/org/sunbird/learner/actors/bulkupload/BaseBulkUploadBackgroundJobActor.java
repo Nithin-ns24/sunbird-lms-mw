@@ -6,6 +6,7 @@ import com.opencsv.CSVWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -244,7 +245,7 @@ public abstract class BaseBulkUploadBackgroundJobActor extends BaseBulkUploadAct
         MessageFormat.format("BaseBulkUploadBackGroundJobActor:getFileHandle:{0}: ", processId);
     File file = null;
     try {
-      file = File.createTempFile(objType, "upload");
+      file = Files.createTempFile(objType, "upload").toFile();
     } catch (IOException e) {
       ProjectLogger.log(
           logMessagePrefix + "Exception occurred with error message = " + e.getMessage(),
