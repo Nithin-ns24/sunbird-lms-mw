@@ -81,7 +81,7 @@
 		<dependency>
 			<groupId>com.intuit.fuzzymatcher</groupId>
 			<artifactId>fuzzy-matcher</artifactId>
-			<version>0.4.1</version>
+			<version>1.2.2</version>
 		</dependency>
 	</dependencies>
 	<build>
